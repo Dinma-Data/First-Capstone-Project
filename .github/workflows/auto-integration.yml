@@ -12,8 +12,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Bash
-        run: sudo apt-get update && sudo apt-get install -y bash
+      - name: Debug File Structure
+        run: ls -R
+
+      - name: Make script executable
+        run: chmod +x integrate_data.sh
 
       - name: Run integration script
-        run: ./integration_script.sh
+        run: ./integrate_data.sh     
