@@ -3,7 +3,7 @@ name: Automate Data Integration
 on:
   push:
     paths:
-      - "data-hub/*.csv"
+      - "**/*"
 
 jobs:
   integrate:
