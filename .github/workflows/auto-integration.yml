@@ -47,11 +47,11 @@ jobs:
 
       # Step 2: Make the Bash script executable
       - name: Make Script Executable
-        run: chmod +x scripts/integration_script.sh
+        run: chmod +x scripts/integration_scripts.sh
 
       # Step 3: Run the Bash script
       - name: Run Data Integration Script
-        run: ./scripts/integration_script.sh
+        run: ./scripts/integration_scripts.sh
 
       # Step 4: Check the updated dataset
       - name: Check the updated dataset
